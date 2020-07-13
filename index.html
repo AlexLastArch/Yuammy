@@ -4,29 +4,35 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Yummy</title>
+	<title>Yuammy</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-	<header class="container" id="home">
-        <nav class="navbar navbar-light" style="background-color: #cf7713;">
-            <a class="navbar-brand" href="#">Yammy</a>
+		
+		<header class="container" id="home">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #cf7713;">
+            <a class="navbar-brand" href="#">Yuammy</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link " href="#home">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link " href="#home">Початок<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#products">Products</a>
+                        <a class="nav-link " href="#products">Продукти</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#contacts">Contacts</a>
+                        <a class="nav-link " href="#contacts">Контакти</a>
                     </li>
-                </ul>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Пошук</button>
+				  </form>
                 <div>
                     <a class="nav-link openCartLink" href="#modal-cart" data-toggle="modal">
                       <i class="fas fa-shopping-cart"></i>
@@ -48,10 +54,10 @@
 				<img src="img/products/bees_w700_h400.jpg" class="d-block w-100" alt="bees">
 			  </div>
 			  <div class="carousel-item">
-				<img src="img/products/candles_761px_400px.png" class="d-block w-100" alt="jar_of_honey">
+				<img src="img/products/candles_700px_400px.png" class="d-block w-100" alt="jar_of_honey">
 			  </div>
 			  <div class="carousel-item">
-				<img src="img/products/oip_w604px_400px.jpg" class="d-block w-100" alt="jar_of_honey">
+				<img src="img/products/oip_w700px_400px.jpg" class="d-block w-100" alt="jar_of_honey">
 			  </div>
 			</div>
 			<a class="carousel-control-prev" href="#carouselProducts" role="button" data-slide="prev">
@@ -64,86 +70,123 @@
 			</a>
 		  </div>
 	</div>
-	<main class="container">
-		<h2> Products </h2>
-		<div class="row">
-			<article class="card col-12 col-sm col md-4 col lg-3">
-			<img src="img/products/jar_of_honey.jpg" class="card-img-top" alt="jar_of_honey">
-		<div class="card-body">
-		  <h5 class="card-title">Баночка меду</h5>
-		  <p class="card-text">Найсмачніший мед</p>
-		  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productInfoModal">Купити</a>
+	<section>
+		<h2 id="products">Продукти</h2>
+		<div class="row products-container">
 		</div>
-	</article>
-	<article class="card col-12 col-sm col md-4 col lg-3">
-	  <img src="img/products/bottle.jpg" class="card-img-top" alt="...">
-	  <div class="card-body">
-		<h5 class="card-title">Гармонія меду</h5>
-		<p class="card-text">Неповторний смак</p>
-		<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productInfoModal">Купити</a>
-	  </div>
-	</article>
-	<article class="card col-12 col-sm col md-4 col lg-3">
-		<img src="img/products/oip.jpg" class="card-img-top" alt="...">
-		<div class="card-body">
-		  <h5 class="card-title">Мед з воском</h5>
-		  <p class="card-text">Здоров'я ШКТ і для зубів</p>
-		  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productInfoModal">Купити</a>
-		</div>
-	</article>
-	<article class="card col-12 col-sm col md-4 col lg-3">
-		<img src="img/products/candles.jpg" class="card-img-top" alt="...">
-		<div class="card-body">
-		  <h5 class="card-title">Різнокольорові свічки</h5>
-		  <p class="card-text">Різнокольорові свічки з ароматами</p>
-		  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productInfoModal">Купити</a>
-		</div>
-	</article>
-	<article class="card col-12 col-sm col md-4 col lg-3">
-		<img src="img/products/candleswax.jpg" class="card-img-top" alt="...">
-		<div class="card-body">
-		  <h5 class="card-title">Гармонія світла від свічок</h5>
-		  <p class="card-text">Неперевершений аромат воску</p>
-		  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productInfoModal">Купити</a>
-		</div>
-	</article>
-	<article class="card col-12 col-sm col md-4 col lg-3">
-		<img src="img/products/candlescolour.jpg" class="card-img-top" alt="...">
-		<div class="card-body">
-		  <h5 class="card-title">Свічки як "Камінь"</h5>
-		  <p class="card-text">Ідеальні для інтер'єру</p>
-		  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productInfoModal">Купити</a>
-		</article>
-	  </div>
-	</main>	
-
+	</section>
+	</main>
 	
+    <h1>Особлива ціна на Сон на вуликах діє ще ...</h1>
+
+    <div id="countdown" class="countdown">
+      <div class="time">
+        <h2 id="days">00</h2>
+        <small>days</small>
+      </div>
+      <div class="time">
+        <h2 id="hours">00</h2>
+        <small>hours</small>
+      </div>
+      <div class="time">
+        <h2 id="minutes">00</h2>
+        <small>minutes</small>
+      </div>
+      <div class="time">
+        <h2 id="seconds">00</h2>
+        <small>seconds</small>
+      </div>
+	</div>
+	
+	<h3> Замовляйте з 30% знижкою</h3>
+    
 	  <footer class="container">
-		<h2 id="contacts">Contact us</h2>
-		</footer>
+				<h2 id="contacts">Зв'язок з нами</h2>
+				<a href="https://www.youtube.com"><img width="50px" height="50px" src="https://www.vectorlogo.zone/logos/youtube/youtube-tile.svg" alt="YouTube"></a>
+				<a href="https://www.instagram.com"><img width="50px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" alt="Instagram"></a>    
+				<a href="https://twitter.com"><img width="50px" height="50px" src="https://cdn.worldvectorlogo.com/logos/twitter-4.svg" alt="Twitter"></a> 
+				<a href="https://www.facebook.com"><img width="50px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt="Facebook"></a>
+				<h3>Залишились запитання?</h3>
+						<h3><a href="#">Запитайте у нас</a></h3>
+		<footer>		 
+				
+			  
+	</footer>
 
-
-	<div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="productInfoModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-		  <div class="modal-content">
-			<div class="modal-header">
-			  <h5 class="modal-title" id="productInfoModalLabel">Modal title</h5>
-			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			  </button>
-			</div>
-			<div class="modal-body">
-				<img src="img/products/candles.jpg" class="card-img-top" alt="candles.jpg">
-				<div class="card-body">
-				  <h5 class="card-title">Різнокольорові свічки</h5>
-			</div>
-			<div class="modal-footer">
-			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			  <button type="button" class="btn btn-primary">Save changes</button>
+		<div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h5 class="modal-title" id="productInfoLabel">Product Info</h5>
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<div class="modal-body">
+					<img class="card-img-top" src="" alt="">
+					<h4 class="card-title"></h4>
+					<p class="card-text"></p>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Закрити</button>
+				  <button class="btn btn-primary buy" data-id="id">Buy</button>
+				</div>
+			  </div>
 			</div>
 		  </div>
-		</div>
-	  </div>
+		  
+		  <div class="modal fade" id="modal-cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h5 class="modal-title" id="cartLabel">Cart</h5>
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<div class="modal-body">
+				  <div class="cart-product-list-container"></div>
+				  <hr>
+				  <div class="container">
+					<form class="form-contacts">
+					  <div class="form-group row">
+						<label for="client-name" class="col-4 col-form-label">Ваше Ім'я:</label>
+						<input class="form-control col-8" type="text" id="client-name" required>
+					  </div>
+					  <div class="form-group row">
+						<label for="client-email" class="col-4 col-form-label">Ваш email:</label>
+						<input class="form-control col-8" type="email" id="client-email" required>
+					  </div>
+					</form>
+				  </div>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Закрити</button>
+				  <button class="btn btn-primary order">Замовити</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.0381899811005!2d24.029502815800026!3d49.8417399389176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6daf2238f7%3A0x657ac2a6cdcf320b!2zUmF0dXNoYSwg0L_Qu9C-0YnQsCDQoNC40L3QvtC6LCAxLCDQm9GM0LLRltCyLCDQm9GM0LLRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDc5MDAw!5e0!3m2!1sru!2sua!4v1594482595317!5m2!1sru!2sua" position="absolute" width=100% height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		
+		<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #cf7713;">
+            <a class="navbar-brand" href="#">Yuammy</a>
+                   
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link " href="#home">Початок<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#products">Продукти</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#contacts">Контакти</a>
+                    </li>
+				</ul>
+            </div>
+        </nav>
+
+	
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -155,7 +198,8 @@
     <script defer src="js/products-service.js"></script>
     <script defer src="js/cart.js"></script>
     <script defer src="js/product-list.js"></script>    
-    <script defer src="js/index.js"></script>
+	<script defer src="js/index.js"></script>
+	<script defer src="js/countdown.js"></script>
 </body>
 
 </html>

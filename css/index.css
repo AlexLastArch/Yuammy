@@ -1,0 +1,123 @@
+:root {
+    scroll-behavior: smooth;
+}
+
+#carouselOffers {
+    min-height: 500px;
+}
+
+#carouselOffers img {
+    max-height: 450px;
+}
+
+.intro {
+    max-width: 400px;
+    margin-top: 150px;
+    text-align: center;
+}
+.card {
+    height: 100%;
+}
+
+.alert {
+    position: fixed;
+    top: 50px; 
+    width: 50%;
+    left: 25%;
+    z-index: 1051;
+}
+
+.btn {
+    padding: 0.75rem 0.7rem;
+}
+
+.modal-cart {
+    color: black;
+}
+
+.search {
+    color: black;
+}
+
+.btn-outline-success {
+    color: black;
+    border-color: #cf7713;
+}
+
+
+a.nav-link.openCartLink {
+    color: black;
+}
+
+body {
+    background: url(../img/products/big.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-size: cover;
+}
+
+.btn-primary {
+    background-color: rgba(66, 78, 136, 0.609);
+    border-color: black;
+    margin-left: 10px;
+}
+
+.btn-info {
+    background-color: rgb(216, 147, 44);
+}
+
+h2 {
+    color: white;
+}
+
+.nav-link {
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 20px;
+}
+
+.navbar-brand {
+    font-size: xx-large;
+    font-family: initial;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: darkgrey;
+    text-align: center;
+    border-radius: 8px;
+  }
+
+
+  .time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    padding: 10px;
+    background-color: rgba(139, 155, 53, 0.767);
+  }
+
+  .countdown {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+  }
+
+  h1 {
+      text-align: center;
+      color: white;
+      margin: 30, 10, 30, 10;
+  }
+
+  h3 {
+    text-align: center;
+    color: white;
+    margin: 30, 10, 30, 10;
+}
+
